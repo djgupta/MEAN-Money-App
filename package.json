@@ -1,0 +1,17 @@
+{
+
+  "name": "Money",
+  "version": "0.0.0",
+  "description": "Money App",
+  "main": "server.js",
+  "scripts" : {
+    "test" : "echo \"Error: no test specified\" && exit 1"
+  },
+  "author" : "Dhananjay Gupta",
+  "dependencies":{
+    "body-parser"    : "^1.15.2",
+    "express"        : "^4.14.0",
+    "method-override": "^2.3.6",
+    "mongoose"       : "^4.6.3"
+  }
+}

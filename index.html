@@ -1,0 +1,32 @@
+<html>   
+   <head>
+      <title>Money</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src = "app/scripts/angular.js"></script>
+      <script src = "app/scripts/angular-route.js"></script>
+      <script src =" app/scripts/ui-bootstrap.js"></script>
+      <script src = "app/mainApp.js"></script>
+      <script src = "app/controllers/groupsController.js"></script>
+      <script src = "app/controllers/memberPopupController.js"></script>
+      <script src = "app/controllers/groupPopupController.js"></script>
+      <script src = "app/controllers/homeController.js"></script>
+      <script src = "app/controllers/signInController.js"></script>
+      <script src = "app/controllers/addExpenseController.js"></script>
+      <script src = "app/services/appService.js"></script>
+      <script src = "app/services/signInService.js"></script>
+      <link rel="stylesheet" type="text/css" href="app/scripts/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="app/scripts/additional.css">
+   </head>
+   
+   <body>
+      <h2>Manage Money</h2>
+      <div ng-app = "mainApp">
+         <ul class="nav nav-tabs">
+           <li role="presentation"><a href = "#home">Home</a></li>
+           <li role="presentation"><a href = "#groups">Groups</a></li>
+           <li role="presentation" class="pull-right"><a href = "#signIn">Sign In/Out</a></li>
+         </ul>
+         <div ng-view></div>
+      </div>
+   </body>
+</html>

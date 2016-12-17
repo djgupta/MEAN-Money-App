@@ -1,0 +1,23 @@
+<div class="container"">
+	<div>
+		<input class="btn btn-primary btn-sm pull-right" type="button" value="Add Group" ng-click="openGroupPopup('Add Group', {})">
+	</div>
+	<table class="table">
+		<thead>
+			<tr>
+		    	<th>Group Name</th>
+		    	<th>Group Members</th>
+		    	<th>Edit</th>
+		    	<th>Delete</th>
+		  	</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="group in groupsList">
+		    	<td>{{ group.GroupName }}</td>
+		    	<td>{{ group.GroupMembers.length }}</td>
+		    	<td><input class="btn btn-primary btn-sm" type="button" value="Edit Group" ng-click="openGroupPopup('Update Group', group)"></td>
+		    	<td><input class="btn btn-danger btn-sm" type="button" value="Delete Group" ng-click="delete(group)"></td>
+		  	</tr>
+		</tbody>
+	</table>
+</div>

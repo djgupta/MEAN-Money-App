@@ -1,0 +1,30 @@
+<div class="modal-header">
+    <h3>Add Expense</h3>
+</div>
+<div class="modal-body">
+	<form>
+		<div class="form-group" >
+		    <label for="text">Expense Group:</label>
+		    <select class="form-control" ng-model="expense.Group"
+				ng-options="group.GroupName for (key,group) in user.Groups">
+			</select>
+	 	</div>
+	 	<div class="form-group" ng-disabled="true">
+	    	<label for="text">Expense Member:</label>
+	    	<select class="form-control" ng-model="expense.Member" ng-disabled="expense.Group==null"
+				ng-options="member.MemberName for (key, member) in expense.Group.GroupMembers">
+			</select>
+	  	</div>
+	  <div class="form-group">
+	    <label for="text">Expense Type:</label>
+	    <input type="text" class="form-control" id="Type" ng-model="expense.ExpenseType" ng-disabled="expense.Member==null">
+	  </div>
+	  <div class="form-group">
+	    <label for="number">Expense Amount:</label>
+	    <input type="number" class="form-control" id="Amount" ng-model="expense.ExpenseAmount" ng-disabled="expense.Member==null">
+	  </div>
+	  
+	  <button type="submit" class="btn btn-primary" ng-click="save()">Save</button>
+	  <button class="btn btn-warning" type="button" ng-click="close()">Cancel</button>
+	</form>
+</div>
