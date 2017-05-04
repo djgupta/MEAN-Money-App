@@ -5,12 +5,16 @@ It is based on MEAN (MeanJS, ExpressJS, AngularJS, NodeJS) stack.
 
 Basic steps to set up this project are mentioned
 
-1)	Install NodeJS (if not installed)
-2)	Start Node.js in cmd
-3)	Go to the "MEAN-Money-App" folder through cmd
-4)	Run "npm install". This will install all dependencies by reading package.json
-5)	Install mongoDB server (if not installed)
-6)	Run mongod.exe which will be available in bin folder of mongoDB directory. This should start the database server
-7)	In node cmd, run “node server.js”. App is now hosted.
-8)	In browser, enter “localhost:8080”. Enjoy the app! :)
-
+* Download the zip file of this repository
+* Install mongoDB server (if not installed)
+  (url: https://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-3.4.4-signed.msi/download)
+* Open cmd (search "cmd" in start menu)
+* In cmd, enter "cd C:\mongodb\bin". Assuming mongoDb is installed in default location.
+* In cmd, enter "mongod.exe". This should start the database server
+* Install NodeJS (if not installed)
+  (url: https://nodejs.org)
+* Open another cmd window (search "cmd" in start menu). 
+* Go to the "MEAN-Money-App" folder location through cmd. Similar to step 4.
+* In cmd, enter "npm install". This will install all dependencies by reading package.json
+* In cmd, enter “node server.js”. App is now hosted.
+* In browser, enter “localhost:8080”. Enjoy the app! :)
